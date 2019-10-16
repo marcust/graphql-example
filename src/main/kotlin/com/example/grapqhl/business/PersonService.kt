@@ -8,5 +8,6 @@ import java.util.*
 class PersonService {
 
     fun getPerson() : Person = Person("Test Person", UUID.randomUUID())
+    fun getPersons(): List<Person> = listOf(getPerson(), Person("Another Test Person", UUID.randomUUID()))
 
 }

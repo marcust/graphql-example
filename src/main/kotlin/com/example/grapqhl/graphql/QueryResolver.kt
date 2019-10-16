@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component
 @Component
 class QueryResolver(private val personService: PersonService) : GraphQLQueryResolver {
 
-    fun getPerson() : Person {
-        return personService.getPerson();
-    }
+    fun getPerson() : Person = personService.getPerson()
+
+    fun getPersons() : List<Person> = personService.getPersons();
 
 }

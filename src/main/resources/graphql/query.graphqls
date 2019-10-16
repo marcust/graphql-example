@@ -2,5 +2,6 @@ type Query {
 
     person: Person!
 
+    persons: [Person!]!
 
 }

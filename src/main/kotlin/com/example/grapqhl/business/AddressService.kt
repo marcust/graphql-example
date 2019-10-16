@@ -9,4 +9,7 @@ class AddressService {
 
     fun getAddress(addressId : UUID) : Address = Address("Some Street")
 
+    // Example only, should map to a batch loading function
+    fun loadAddresses(ids: Set<UUID>): Map<UUID, Address> = ids.map { it to getAddress(it) }.toMap()
+
 }
