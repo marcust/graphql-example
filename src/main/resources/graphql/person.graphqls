@@ -1,8 +1,0 @@
-type Person {
-    name: String!
-    address: Address!
-}
-
-type Address {
-    street: String!
-}

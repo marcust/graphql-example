@@ -1,0 +1,10 @@
+type Job {
+    title: String!
+    description: String
+
+    location: Address!
+}
+
+type Address {
+    streetNo: String!
+}
